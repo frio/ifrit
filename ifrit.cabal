@@ -1,0 +1,35 @@
+name:                ifrit
+version:             0.1.0.0
+synopsis:            A toolkit for building ifttt-style web-glue
+-- description:         
+license:             BSD3
+license-file:        LICENSE
+author:              frio
+maintainer:          development@frio.name
+copyright:           (c) 2012 frio
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.8
+homepage:            https://github.com/frio/ifrit/
+bug-reports:         mailto:development@frio.name
+
+source-repository head
+  type: git
+  location: git://github.com/frio/ifrit.git
+
+executable ifrit
+  main-is:             Main.hs
+  hs-source-dirs:      src/hs, test/hs
+  build-depends:       base ==4.5.*
+                     , http-conduit
+                     , reactive-banana
+
+test-suite spec
+  main-is:             Spec.hs
+  type:                exitcode-stdio-1.0       
+  hs-source-dirs:      src/hs, test/hs
+  build-depends:       base ==4.5.*
+                     , hspec
+                     , http-conduit
+                     , reactive-banana
+
