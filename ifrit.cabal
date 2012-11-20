@@ -21,15 +21,21 @@ executable ifrit
   main-is:             Main.hs
   hs-source-dirs:      src/hs, test/hs
   build-depends:       base ==4.5.*
+                     , bytestring
+                     , conduit
                      , http-conduit
                      , reactive-banana
+                     , transformers
 
 test-suite spec
   main-is:             Spec.hs
   type:                exitcode-stdio-1.0       
   hs-source-dirs:      src/hs, test/hs
   build-depends:       base ==4.5.*
+                     , bytestring
+                     , conduit
                      , hspec
                      , http-conduit
                      , reactive-banana
+                     , transformers
 
