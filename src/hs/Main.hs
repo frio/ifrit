@@ -1,10 +1,13 @@
 module Main where
 
 import Ifrit.Client.Pushover
+import Ifrit.Framework
 
 api  = "1"
 user = "1"
-config = PushoverConfiguration api user
+config = Pushover api user
 
 main :: IO ()
-main = send config "This is a test"
+main = do
+  send config $ TitledMessage "Awesome title" "Awesome test"
+  return ()
