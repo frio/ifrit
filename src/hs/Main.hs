@@ -1,6 +1,6 @@
 module Main where
 
-import Network.Client.Pushover
+import Ifrit.Client.Pushover
 
 api  = "1"
 user = "1"

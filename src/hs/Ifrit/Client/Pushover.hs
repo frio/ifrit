@@ -1,5 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
-module Network.Client.Pushover where
+module Ifrit.Client.Pushover where
 
 import Network.HTTP.Conduit
 import Data.Conduit
