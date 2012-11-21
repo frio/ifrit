@@ -1,3 +1,5 @@
 cabal-dev/
 dist/
 *.swp
+.hsenv_ifrit/
+dist_ifrit/
