@@ -9,3 +9,6 @@ data Message = TitledMessage { title   :: String
 
 class Sendable a where
   send :: a -> Message -> IO Bool
+
+class Receivable a where
+  receive :: a -> IO Message

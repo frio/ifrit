@@ -7,3 +7,6 @@ data Dummy = Dummy
 
 instance Sendable Dummy where
   send _ msg = return True
+
+instance Receivable Dummy where
+  receive _ = return $ TitledMessage "noop" "noop"
